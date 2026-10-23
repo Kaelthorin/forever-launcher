@@ -1,0 +1,7 @@
+## Interface: 16001
+## Title: Forever Recap
+## Notes: Click [Recap] in chat to watch how a player died (TrinityCore Forever death recap).
+## Author: Forever Launcher
+## Version: 1.0.0
+
+ForeverRecap.lua
