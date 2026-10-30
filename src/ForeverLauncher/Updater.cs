@@ -47,7 +47,7 @@ public static class Updater
 	private static WebClient Client()
 	{
 		WebClient webClient = new WebClient();
-		webClient.Headers[HttpRequestHeader.UserAgent] = "ForeverLauncher/2.4.1";
+		webClient.Headers[HttpRequestHeader.UserAgent] = "ForeverLauncher/2.4.2";
 		return webClient;
 	}
 
@@ -97,7 +97,7 @@ public static class Updater
 	{
 		if (r != null)
 		{
-			return StatusClient.IsNewer(r.Version, "2.4.1");
+			return StatusClient.IsNewer(r.Version, "2.4.2");
 		}
 		return false;
 	}

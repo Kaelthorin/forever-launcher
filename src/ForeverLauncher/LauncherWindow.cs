@@ -257,7 +257,7 @@ public sealed class LauncherWindow
 		{
 			SetLanguage("ru");
 		};
-		versionText.Text = "v2.4.1";
+		versionText.Text = "v2.4.2";
 		Find<Grid>("TitleBar").MouseLeftButtonDown += (object s, MouseButtonEventArgs e) =>
 		{
 			if (e.ButtonState == MouseButtonState.Pressed)
@@ -644,7 +644,7 @@ public sealed class LauncherWindow
 			ShowNewsText(L.Get("ui.newsfail"));
 		}
 		ShowCommits();
-		if (updateState == UpdateState.None && StatusClient.IsNewer(s.LatestLauncher, "2.4.1"))
+		if (updateState == UpdateState.None && StatusClient.IsNewer(s.LatestLauncher, "2.4.2"))
 		{
 			updateText.Text = L.Get("ui.update", s.LatestLauncher);
 			if (!string.IsNullOrEmpty(s.LauncherUrl))

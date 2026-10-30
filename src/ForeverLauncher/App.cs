@@ -12,7 +12,7 @@ namespace ForeverLauncher;
 
 public static class App
 {
-	public const string Version = "2.4.1";
+	public const string Version = "2.4.2";
 
 	public const string Title = "Forever Launcher";
 
@@ -31,7 +31,7 @@ public static class App
 		int num = Array.IndexOf(commandLineArgs, "--updated");
 		if (num > 0)
 		{
-			UpdatedTo = ((num + 1 < commandLineArgs.Length) ? commandLineArgs[num + 1] : "2.4.1");
+			UpdatedTo = ((num + 1 < commandLineArgs.Length) ? commandLineArgs[num + 1] : "2.4.2");
 		}
 		bool createdNew;
 		using Mutex mutex = new Mutex(initiallyOwned: true, "ForeverLauncher-single", out createdNew);
@@ -110,7 +110,7 @@ public static class App
 		try
 		{
 			Directory.CreateDirectory(Path.GetDirectoryName(CrashFile));
-			File.AppendAllText(CrashFile, string.Concat(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), " v2.4.1", Environment.NewLine, ex, Environment.NewLine, Environment.NewLine));
+			File.AppendAllText(CrashFile, string.Concat(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), " v2.4.2", Environment.NewLine, ex, Environment.NewLine, Environment.NewLine));
 		}
 		catch
 		{

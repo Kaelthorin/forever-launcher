@@ -54,7 +54,7 @@ public static class CommitFeed
 				using (WebClient wc = new WebClient())
 				{
 					wc.Encoding = Encoding.UTF8;
-					wc.Headers[HttpRequestHeader.UserAgent] = "ForeverLauncher/2.4.1";
+					wc.Headers[HttpRequestHeader.UserAgent] = "ForeverLauncher/2.4.2";
 					wc.Headers[HttpRequestHeader.Accept] = "application/vnd.github+json";
 					json = await wc.DownloadStringTaskAsync("https://api.github.com/repos/advocaite/TrinityCore/commits?sha=forever&per_page=" + 10);
 				}
